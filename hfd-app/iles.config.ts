@@ -35,4 +35,7 @@ export default defineConfig({
       },
     },
   },
+  components: {
+		fa6-solid:truck,
+	},
 });

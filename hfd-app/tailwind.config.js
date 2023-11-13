@@ -20,11 +20,15 @@ export default {
   theme: {
     extend: {},
   },
+  corePlugins: {
+    aspectRatio: false,
+  },
   plugins: [
     require("@pinegrow/tailwindcss-plugin").default({
       colors: pg_colors, // primary, secondary etc
       fonts: pg_fonts,
       backgrounds: pg_backgrounds, // bg-design-image, bg-design-image-large
     }),
+    require("@tailwindcss/aspect-ratio"),
   ],
 };

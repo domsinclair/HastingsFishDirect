@@ -12,8 +12,10 @@
     "node": "^14.18 || >= 16.0.0"
   },
   "devDependencies": {
+    "@iconify/vue": "^4.1.1",
     "@pinegrow/iles-module": "^3.0.29",
     "@pinegrow/tailwindcss-plugin": "^3.0.18",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
     "autoprefixer": "^10.4.16",
     "iles": "^0.9.5",
     "postcss": "^8.4.31",
