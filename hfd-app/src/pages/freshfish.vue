@@ -7,7 +7,9 @@
 </script>
 
 <template layout="default">
-  <FreshFishProducts></FreshFishProducts>
+  <main>
+    <FreshFishProducts />
+  </main>
 </template>
 
 <style scoped></style>

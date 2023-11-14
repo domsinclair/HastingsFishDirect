@@ -1,5 +1,5 @@
 <page>
-    title: Smokedfish
+    title: Home
   </page>
 
 <script setup lang="ts">
@@ -8,7 +8,9 @@
 </script>
 
 <template layout="default">
-  <HfdHeaderImage />
-  <HfdFeatureSection />
-  <HfdFishCategories />
+  <main>
+    <HfdHeaderImage />
+    <HfdFeatureSection />
+    <HfdFishCategories />
+  </main>
 </template>

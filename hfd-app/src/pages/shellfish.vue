@@ -8,7 +8,9 @@
 </script>
 
 <template layout="default">
-  <ShellFishProducts></ShellFishProducts>
+  <main>
+    <ShellFishProducts />
+  </main>
 </template>
 
 <style scoped></style>

@@ -59,7 +59,7 @@ const products = [
   ```
 -->
 <template>
-  <div class="bg-white">
+  <div class="bg-white dark:bg-gray-800">
     <div
       class="max-w-2xl px-4 py-16 mx-auto sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8"
     >
@@ -71,7 +71,7 @@ const products = [
         <div
           v-for="product in products"
           :key="product.id"
-          class="relative flex flex-col overflow-hidden bg-white border border-gray-200 rounded-lg group"
+          class="relative flex flex-col overflow-hidden bg-white border border-gray-200 rounded-lg dark:bg-gray-600 group"
         >
           <div
             class="bg-gray-200 aspect-h-4 aspect-w-3 sm:aspect-none group-hover:opacity-75 sm:h-96"
@@ -83,16 +83,20 @@ const products = [
             />
           </div>
           <div class="flex flex-col flex-1 p-4 space-y-2">
-            <h3 class="text-sm font-medium text-gray-900">
+            <h3 class="text-sm font-medium text-gray-900 dark:text-gray-200">
               <a :href="product.href">
                 <span aria-hidden="true" class="absolute inset-0" />
                 {{ product.name }}
               </a>
             </h3>
-            <p class="text-sm text-gray-500">{{ product.description }}</p>
+            <p class="text-sm text-gray-500 dark:text-gray-300">
+              {{ product.description }}
+            </p>
             <div class="flex flex-col justify-end flex-1">
-              <p class="text-sm italic text-gray-500">{{ product.options }}</p>
-              <p class="text-base font-medium text-gray-900">
+              <p class="text-sm italic text-gray-500 dark:text-gray-300">
+                {{ product.options }}
+              </p>
+              <p class="text-base font-medium text-gray-900 dark:text-gray-200">
                 {{ product.price }}
               </p>
             </div>
