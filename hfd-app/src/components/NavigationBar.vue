@@ -33,8 +33,8 @@ import {
 const navigation = [
   { name: "Home", href: "/", current: true },
   { name: "Fresh Fish", href: "/freshfish", current: false },
-  //{ name: "Projects", href: "#", current: false },
-  //{ name: "Calendar", href: "#", current: false },
+  { name: "Shell Fish", href: "/shellfish", current: false },
+  { name: "Smoked Fish", href: "/smokedfish", current: false },
 ];
 </script>
 

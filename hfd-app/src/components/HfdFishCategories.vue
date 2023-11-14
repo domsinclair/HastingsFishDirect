@@ -27,14 +27,14 @@ const callouts = [
     description: "Fantastic shellfish for every occasion",
     imageSrc: "/shellfish.jpg",
     imageAlt: "",
-    href: "#",
+    href: "/shellfish",
   },
   {
     name: "Smoked Fish",
     description: "The finest smoked fish direct from our own smokery",
     imageSrc: "/smokedfish.jpg",
     imageAlt: "",
-    href: "#",
+    href: "/smokedfish",
   },
 ];
 </script>

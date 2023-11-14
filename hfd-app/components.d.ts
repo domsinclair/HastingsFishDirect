@@ -20,6 +20,8 @@ declare module '@vue/runtime-core' {
     NavigationBar: typeof import('./src/components/NavigationBar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    ShellFishProducts: typeof import('./src/components/ShellFishProducts.vue')['default']
+    SmokedFishProducts: typeof import('./src/components/SmokedFishProducts.vue')['default']
     SupportIcon: typeof import('./src/components/icons/SupportIcon.vue')['default']
     ToolingIcon: typeof import('./src/components/icons/ToolingIcon.vue')['default']
   }
