@@ -1,3 +1,43 @@
+<script setup lang="ts">
+// const props = defineProps({
+// 	name: {
+// 		type: String,
+// 		default: 'NavigationBar',
+// 	},
+// })
+
+// const emit = defineEmits(['addToCart'])
+
+// // Use the addToCart function like this:
+// // Eg-1: addToCart('pizza', 10)
+// // Eg-2: (event) => addToCart('pizza', 10, event)
+// const addToCart = (item, quantity /*, event*/) => {
+// 	emit('addToCart', { item, quantity })
+// }
+import {
+  Disclosure,
+  DisclosureButton,
+  DisclosurePanel,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuItems,
+} from "@headlessui/vue";
+import {
+  Bars3Icon,
+  BellIcon,
+  XMarkIcon,
+  PhoneIcon,
+} from "@heroicons/vue/24/outline";
+
+const navigation = [
+  { name: "Home", href: "/", current: true },
+  { name: "Fresh Fish", href: "/freshfish", current: false },
+  //{ name: "Projects", href: "#", current: false },
+  //{ name: "Calendar", href: "#", current: false },
+];
+</script>
+
 <template>
   <Disclosure as="nav" class="bg-gray-800" v-slot="{ open }">
     <div class="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -17,14 +57,14 @@
           class="flex items-center justify-center flex-1 sm:items-stretch sm:justify-start"
         >
           <!-- <div class="flex items-center flex-shrink-0">
-            <img
-              class="w-auto h-8"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-              alt="Your Company"
-            />
-          </div>-->
+			  <img
+				class="w-auto h-8"
+				src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+				alt="Your Company"
+			  />
+			</div>-->
           <div class="flex flex-row items-center">
-            <PhoneIcon class="h-6 text-stone-300 w-6" />
+            <PhoneIcon class="w-6 h-6 text-stone-300" />
             <p class="pl-6 text-stone-300">07973 214450</p>
           </div>
           <div class="hidden sm:ml-6 sm:block">
@@ -138,23 +178,5 @@
     </DisclosurePanel>
   </Disclosure>
 </template>
-<script setup>
-import {
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuItems,
-} from "@headlessui/vue";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/vue/24/outline";
-import { PhoneIcon } from "@heroicons/vue/20/solid";
 
-const navigation = [
-  { name: "Dashboard", href: "#", current: true },
-  { name: "Team", href: "#", current: false },
-  { name: "Projects", href: "#", current: false },
-  { name: "Calendar", href: "#", current: false },
-];
-</script>
+<style scoped></style>

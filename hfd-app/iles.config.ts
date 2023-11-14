@@ -1,6 +1,8 @@
 //iles.config.js (or) iles.config.ts
 import { fileURLToPath, URL } from "node:url";
 import { defineConfig } from "iles";
+import Unocss from "unocss/vite";
+import presetIcons from "@unocss/preset-icons";
 
 export default defineConfig({
   modules: [
@@ -23,6 +25,16 @@ export default defineConfig({
     //...
   ],
   vite: {
+    plugins: [
+      Unocss({
+        presets: [
+          presetIcons({
+            prefix: "i-", // default prefix, do not change
+          }),
+        ],
+      }),
+      //...
+    ],
     resolve: {
       alias: {
         /* Must be either an object, or an array of { find, replacement, customResolver } pairs. */
@@ -35,7 +47,4 @@ export default defineConfig({
       },
     },
   },
-  components: {
-		fa6-solid:truck,
-	},
 });

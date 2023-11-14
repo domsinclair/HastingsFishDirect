@@ -7,15 +7,17 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    BaseIcon: typeof import('./src/components/BaseIcon.vue')['default']
     CommunityIcon: typeof import('./src/components/icons/CommunityIcon.vue')['default']
     DocumentationIcon: typeof import('./src/components/icons/DocumentationIcon.vue')['default']
     EcosystemIcon: typeof import('./src/components/icons/EcosystemIcon.vue')['default']
-    FishCategories: typeof import('./src/components/FishCategories.vue')['default']
     FrameworkLink: typeof import('./src/components/FrameworkLink.vue')['default']
-    HfdFeatures: typeof import('./src/components/HfdFeatures.vue')['default']
-    MainFooter: typeof import('./src/components/MainFooter.vue')['default']
-    MainHeaderImage: typeof import('./src/components/MainHeaderImage.vue')['default']
-    NavBar: typeof import('./src/components/NavBar.vue')['default']
+    FreshFishProducts: typeof import('./src/components/FreshFishProducts.vue')['default']
+    HfdFeatureSection: typeof import('./src/components/HfdFeatureSection.vue')['default']
+    HfdFishCategories: typeof import('./src/components/HfdFishCategories.vue')['default']
+    HfdFooter: typeof import('./src/components/HfdFooter.vue')['default']
+    HfdHeaderImage: typeof import('./src/components/HfdHeaderImage.vue')['default']
+    NavigationBar: typeof import('./src/components/NavigationBar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SupportIcon: typeof import('./src/components/icons/SupportIcon.vue')['default']

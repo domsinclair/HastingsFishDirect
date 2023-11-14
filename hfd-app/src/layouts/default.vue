@@ -1,5 +1,5 @@
 <template>
-  <NavBar></NavBar>
-  <slot />
-  <MainFooter></MainFooter>
+    <NavigationBar/>
+    <slot/>
+    <HfdFooter/>
 </template>

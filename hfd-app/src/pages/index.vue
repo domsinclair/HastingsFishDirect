@@ -1,5 +1,5 @@
 <template>
-    <MainHeaderImage></MainHeaderImage>
-    <HfdFeatures></HfdFeatures>
-    <FishCategories></FishCategories>
+    <HfdHeaderImage/>
+    <HfdFeatureSection/>
+    <HfdFishCategories/>
 </template>

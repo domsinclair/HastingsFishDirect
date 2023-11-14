@@ -1,3 +1,47 @@
+<script setup lang="ts">
+// const props = defineProps({
+// 	name: {
+// 		type: String,
+// 		default: 'HfdHeaderImage',
+// 	},
+// })
+
+// const emit = defineEmits(['addToCart'])
+
+// // Use the addToCart function like this:
+// // Eg-1: addToCart('pizza', 10)
+// // Eg-2: (event) => addToCart('pizza', 10, event)
+// const addToCart = (item, quantity /*, event*/) => {
+// 	emit('addToCart', { item, quantity })
+// }
+import {
+  LifebuoyIcon,
+  NewspaperIcon,
+  PhoneIcon,
+} from "@heroicons/vue/20/solid";
+
+const cards = [
+  {
+    name: "Sales",
+    description:
+      "Consectetur vel non. Rerum ut consequatur nobis unde. Enim est quo corrupti consequatur.",
+    icon: PhoneIcon,
+  },
+  {
+    name: "Technical Support",
+    description:
+      "Quod possimus sit modi rerum exercitationem quaerat atque tenetur ullam.",
+    icon: LifebuoyIcon,
+  },
+  {
+    name: "Media Inquiries",
+    description:
+      "Ratione et porro eligendi est sed ratione rerum itaque. Placeat accusantium impedit eum odit.",
+    icon: NewspaperIcon,
+  },
+];
+</script>
+
 <template>
   <div class="relative py-24 overflow-hidden bg-gray-900 isolate sm:py-32">
     <img
@@ -65,59 +109,32 @@
           Hastings Fish Direct
         </h2>
         <!--<p class="mt-6 text-lg leading-8 text-gray-300">
-          Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
-          cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat
-          aliqua.
-        </p>-->
+			Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
+			cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat
+			aliqua.
+		  </p>-->
       </div>
       <!-- <div
-        class="grid max-w-2xl grid-cols-1 gap-6 mx-auto mt-16 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8"
-      >
-        <div
-          v-for="card in cards"
-          :key="card.name"
-          class="flex p-6 gap-x-4 rounded-xl bg-white/5 ring-1 ring-inset ring-white/10"
-        >
-          <component
-            :is="card.icon"
-            class="flex-none w-5 text-indigo-400 h-7"
-            aria-hidden="true"
-          />
-          <div class="text-base leading-7">
-            <h3 class="font-semibold text-white">{{ card.name }}</h3>
-            <p class="mt-2 text-gray-300">{{ card.description }}</p>
-          </div>
-        </div>
-      </div> -->
+		  class="grid max-w-2xl grid-cols-1 gap-6 mx-auto mt-16 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8"
+		>
+		  <div
+			v-for="card in cards"
+			:key="card.name"
+			class="flex p-6 gap-x-4 rounded-xl bg-white/5 ring-1 ring-inset ring-white/10"
+		  >
+			<component
+			  :is="card.icon"
+			  class="flex-none w-5 text-indigo-400 h-7"
+			  aria-hidden="true"
+			/>
+			<div class="text-base leading-7">
+			  <h3 class="font-semibold text-white">{{ card.name }}</h3>
+			  <p class="mt-2 text-gray-300">{{ card.description }}</p>
+			</div>
+		  </div>
+		</div> -->
     </div>
   </div>
 </template>
 
-<script setup>
-import {
-  LifebuoyIcon,
-  NewspaperIcon,
-  PhoneIcon,
-} from "@heroicons/vue/20/solid";
-
-const cards = [
-  {
-    name: "Sales",
-    description:
-      "Consectetur vel non. Rerum ut consequatur nobis unde. Enim est quo corrupti consequatur.",
-    icon: PhoneIcon,
-  },
-  {
-    name: "Technical Support",
-    description:
-      "Quod possimus sit modi rerum exercitationem quaerat atque tenetur ullam.",
-    icon: LifebuoyIcon,
-  },
-  {
-    name: "Media Inquiries",
-    description:
-      "Ratione et porro eligendi est sed ratione rerum itaque. Placeat accusantium impedit eum odit.",
-    icon: NewspaperIcon,
-  },
-];
-</script>
+<style scoped></style>

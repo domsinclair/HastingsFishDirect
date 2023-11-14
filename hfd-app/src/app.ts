@@ -1,3 +1,4 @@
+import "uno.css";
 import "@/assets/css/tailwind.css";
 
 import { defineApp } from "iles";
