@@ -14,6 +14,7 @@
 // const addToCart = (item, quantity /*, event*/) => {
 // 	emit('addToCart', { item, quantity })
 // }
+
 import {
   Disclosure,
   DisclosureButton,
@@ -29,6 +30,9 @@ import {
   XMarkIcon,
   PhoneIcon,
 } from "@heroicons/vue/24/outline";
+
+import { usePage } from "iles";
+const { frontmatter, meta } = usePage();
 
 const navigation = [
   { name: "Home", href: "/", current: true },
@@ -79,7 +83,7 @@ const navigation = [
                     : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                   'rounded-md px-3 py-2 text-sm font-medium',
                 ]"
-                :aria-current="item.current ? 'page' : undefined"
+                :aria-current="meta.href === item.href"
                 >{{ item.name }}</a
               >
             </div>
