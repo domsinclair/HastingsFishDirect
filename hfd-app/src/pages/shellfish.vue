@@ -9,6 +9,7 @@
 
 <template layout="default">
   <main>
+    <LobsterPriceBanner />
     <ShellFishProducts />
   </main>
 </template>

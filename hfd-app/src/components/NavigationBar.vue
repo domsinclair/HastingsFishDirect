@@ -35,10 +35,10 @@ import { usePage } from "iles";
 const { frontmatter, meta } = usePage();
 
 const navigation = [
-  { name: "Home", href: "/", current: true },
-  { name: "Fresh Fish", href: "/freshfish", current: false },
-  { name: "Shell Fish", href: "/shellfish", current: false },
-  { name: "Smoked Fish", href: "/smokedfish", current: false },
+  { name: "Home", href: "/" },
+  { name: "Fresh Fish", href: "/freshfish" },
+  { name: "Shell Fish", href: "/shellfish" },
+  { name: "Smoked Fish", href: "/smokedfish" },
 ];
 </script>
 
@@ -69,7 +69,7 @@ const navigation = [
 			</div>-->
           <div class="flex flex-row items-center">
             <PhoneIcon class="w-6 h-6 text-stone-300" />
-            <p class="pl-6 text-stone-300">07973 214450</p>
+            <p class="pl-6 text-stone-300">07976 263291</p>
           </div>
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
@@ -78,12 +78,12 @@ const navigation = [
                 :key="item.name"
                 :href="item.href"
                 :class="[
-                  item.current
+                  meta.href === item.href
                     ? 'bg-gray-900 text-white'
                     : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                   'rounded-md px-3 py-2 text-sm font-medium',
                 ]"
-                :aria-current="meta.href === item.href"
+                :aria-current="meta.href === item.href ? 'page' : undefined"
                 >{{ item.name }}</a
               >
             </div>
@@ -170,12 +170,12 @@ const navigation = [
           as="a"
           :href="item.href"
           :class="[
-            item.current
+            meta.href === item.href
               ? 'bg-gray-900 text-white'
               : 'text-gray-300 hover:bg-gray-700 hover:text-white',
             'block rounded-md px-3 py-2 text-base font-medium',
           ]"
-          :aria-current="item.current ? 'page' : undefined"
+          :aria-current="meta.href === item.href ? 'page' : undefined"
           >{{ item.name }}</DisclosureButton
         >
       </div>
