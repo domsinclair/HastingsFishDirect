@@ -9,7 +9,8 @@
       "Price": "21.5",
       "UnitOfSale": "kg",
       "ImageName": "/wildbass.jpg",
-      "Visible": "Yes"
+      "Visible": "Yes",
+      "Href": "#"
     },
     {
       "Id": "2",
@@ -20,7 +21,8 @@
       "Price": "32.5",
       "UnitOfSale": "kg",
       "ImageName": "/doversole.jpg",
-      "Visible": "Yes"
+      "Visible": "Yes",
+      "Href": "#"
     },
     {
       "Id": "4",
@@ -31,7 +33,8 @@
       "Price": "21.5",
       "UnitOfSale": "kg",
       "ImageName": "/hakefillet.jpg",
-      "Visible": "Yes"
+      "Visible": "Yes",
+      "Href": "#"
     },
     {
       "Id": "5",
@@ -42,7 +45,8 @@
       "Price": "25",
       "UnitOfSale": "kg",
       "ImageName": "/wholeturbot.jpg",
-      "Visible": "Yes"
+      "Visible": "Yes",
+      "Href": "#"
     },
     {
       "Id": "6",
@@ -53,7 +57,8 @@
       "Price": "24",
       "UnitOfSale": "kg",
       "ImageName": "/wholebrill.jpg",
-      "Visible": "Yes"
+      "Visible": "Yes",
+      "Href": "#"
     },
     {
       "Id": "7",
@@ -64,7 +69,8 @@
       "Price": "22",
       "UnitOfSale": "kg",
       "ImageName": "/linecaughtbass.jpg",
-      "Visible": "Yes"
+      "Visible": "Yes",
+      "Href": "#"
     },
     {
       "Id": "8",
@@ -75,7 +81,8 @@
       "Price": "20.5",
       "UnitOfSale": "kg",
       "ImageName": "/ryebaylemonsole.jpg",
-      "Visible": "Yes"
+      "Visible": "Yes",
+      "Href": "#"
     },
     {
       "Id": "9",
@@ -86,7 +93,8 @@
       "Price": "19",
       "UnitOfSale": "kg",
       "ImageName": "/localsquid.jpg",
-      "Visible": "Yes"
+      "Visible": "Yes",
+      "Href": "#"
     },
     {
       "Id": "12",
@@ -97,7 +105,8 @@
       "Price": "10.5",
       "UnitOfSale": "kg",
       "ImageName": "/wholemackerel.jpg",
-      "Visible": "Yes"
+      "Visible": "Yes",
+      "Href": "#"
     },
     {
       "Id": "13",
@@ -108,7 +117,8 @@
       "Price": "19.75",
       "UnitOfSale": "kg",
       "ImageName": "/largecodfillet.jpg",
-      "Visible": "Yes"
+      "Visible": "Yes",
+      "Href": "#"
     },
     {
       "Id": "14",
@@ -119,7 +129,8 @@
       "Price": "12.5",
       "UnitOfSale": "kg",
       "ImageName": "/wholeplaice.jpg",
-      "Visible": "Yes"
+      "Visible": "Yes",
+      "Href": "#"
     },
     {
       "Id": "15",
@@ -130,7 +141,8 @@
       "Price": "21",
       "UnitOfSale": "kg",
       "ImageName": "/wholejohndory.jpg",
-      "Visible": "Yes"
+      "Visible": "Yes",
+      "Href": "#"
     },
     {
       "Id": "16",
@@ -141,7 +153,8 @@
       "Price": "21",
       "UnitOfSale": "kg",
       "ImageName": "/monkfish.jpg",
-      "Visible": "Yes"
+      "Visible": "Yes",
+      "Href": "#"
     },
     {
       "Id": "17",
@@ -152,7 +165,47 @@
       "Price": "10.5",
       "UnitOfSale": "kg",
       "ImageName": "/tubgurnard.jpg",
-      "Visible": "Yes"
+      "Visible": "Yes",
+      "Href": "#"
     }
-  ]
+  ],
+  "ShellFish": [
+    {
+      "Id": "3",
+      "Category": "Shell Fish",
+      "Name": "Live Razor Clams",
+      "Description": "One kilogramme of live Razor Clams",
+      "Options": "Sold by weight",
+      "Price": "21.5",
+      "UnitOfSale": "kg",
+      "ImageName": "/liverazorclams.jpg",
+      "Visible": "Yes",
+      "Href": "#"
+    },
+    {
+      "Id": "10",
+      "Category": "Shell Fish",
+      "Name": "Mussels",
+      "Description": "2 kg net of Cornish Mussels (prepared and ready to cook)",
+      "Options": "Sold by weight",
+      "Price": "6.5",
+      "UnitOfSale": "kg",
+      "ImageName": "/cornishmussels.jpg",
+      "Visible": "Yes",
+      "Href": "#"
+    },
+    {
+      "Id": "11",
+      "Category": "Shell Fish",
+      "Name": "Native Live Lobster",
+      "Description": "Local live Lobster available in a wide range of sizes from 400 gm",
+      "Options": "Sold by weight",
+      "Price": "38",
+      "UnitOfSale": "kg",
+      "ImageName": "/localnativelobster.jpg",
+      "Visible": "Yes",
+      "Href": "#"
+    }
+  ],
+  "SmokedFish": []
 }
