@@ -1,5 +1,5 @@
 <template>
-  <NavigationBar client:Load />
+  <NavigationBar />
   <slot />
   <HfdFooter />
 </template>

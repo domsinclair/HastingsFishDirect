@@ -17,7 +17,6 @@ declare module '@vue/runtime-core' {
     HfdFishCategories: typeof import('./src/components/HfdFishCategories.vue')['default']
     HfdFooter: typeof import('./src/components/HfdFooter.vue')['default']
     HfdHeaderImage: typeof import('./src/components/HfdHeaderImage.vue')['default']
-    Island: typeof import('./node_modules/iles/dist/client/app/components/Island.vue')['default']
     LobsterPriceBanner: typeof import('./src/components/LobsterPriceBanner.vue')['default']
     NavigationBar: typeof import('./src/components/NavigationBar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
