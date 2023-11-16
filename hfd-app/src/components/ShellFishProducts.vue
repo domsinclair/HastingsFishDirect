@@ -14,6 +14,7 @@
 // const addToCart = (item, quantity /*, event*/) => {
 // 	emit('addToCart', { item, quantity })
 // }
+//import FreshFish from "~~/db.json";
 const ShellFish = [
   {
     Id: 3,
@@ -96,7 +97,7 @@ const ShellFish = [
           </div>
           <div class="flex flex-col flex-1 p-4 space-y-2">
             <h3 class="text-sm font-medium text-gray-900 dark:text-gray-200">
-              <a :href="fish.href">
+              <a :href="fish.Href">
                 <span aria-hidden="true" class="absolute inset-0" />
                 {{ fish.Name }}
               </a>

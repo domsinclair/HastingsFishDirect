@@ -96,7 +96,7 @@ const navigation = [
             </div>
           </div>
         </div>
-        <div
+        <!-- <div
           class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
         >
           <button
@@ -107,7 +107,8 @@ const navigation = [
             <span class="sr-only">View notifications</span>
             <BellIcon class="w-6 h-6" aria-hidden="true" />
           </button>
-          <!-- Profile dropdown -->
+
+          
           <Menu as="div" class="relative ml-3">
             <div>
               <MenuButton
@@ -166,7 +167,7 @@ const navigation = [
               </MenuItems>
             </transition>
           </Menu>
-        </div>
+        </div> -->
       </div>
     </div>
     <DisclosurePanel class="sm:hidden">
