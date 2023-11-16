@@ -1,4 +1,4 @@
 export default {
-  title: 'îles',
-  description: 'Islands of interactivity with Vue in Vite.js'
-}
+  title: "Hastings Fish Direct",
+  description: "The finest local fish delivered direct to your door",
+};

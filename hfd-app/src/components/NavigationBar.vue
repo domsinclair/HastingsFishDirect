@@ -31,8 +31,15 @@ import {
   PhoneIcon,
 } from "@heroicons/vue/24/outline";
 
-import { usePage } from "iles";
-const { frontmatter, meta } = usePage();
+//import { usePage } from "iles";
+//const { frontmatter, meta } = usePage();
+
+defineProps({
+  meta: {
+    type: Object,
+    required: true,
+  },
+});
 
 const navigation = [
   { name: "Home", href: "/" },
