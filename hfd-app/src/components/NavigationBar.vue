@@ -27,6 +27,7 @@ import {
 import {
   Bars3Icon,
   BellIcon,
+  EnvelopeIcon,
   XMarkIcon,
   PhoneIcon,
 } from "@heroicons/vue/24/outline";
@@ -50,13 +51,13 @@ const navigation = [
 </script>
 
 <template>
-  <Disclosure as="nav" class="bg-gray-800" v-slot="{ open }">
+  <Disclosure as="nav" class="bg-white dark:bg-gray-800" v-slot="{ open }">
     <div class="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div class="relative flex items-center justify-between h-16">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
           <!-- Mobile menu button-->
           <DisclosureButton
-            class="relative inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            class="relative inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:bg-gray-100 hover:text-gray-500 dark:hover:bg-gray-700 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 dark:focus:ring-white"
           >
             <span class="absolute -inset-0.5" />
             <span class="sr-only">Open main menu</span>
@@ -75,8 +76,8 @@ const navigation = [
 			  />
 			</div>-->
           <div class="flex flex-row items-center">
-            <PhoneIcon class="w-6 h-6 text-stone-300" />
-            <p class="pl-6 text-stone-300">07976 263291</p>
+            <PhoneIcon class="w-6 h-6 text-gray-800 dark:text-stone-300" />
+            <p class="pl-6 text-gray-800 dark:text-stone-300">07976 263291</p>
           </div>
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
@@ -86,8 +87,8 @@ const navigation = [
                 :href="item.href"
                 :class="[
                   meta.href === item.href
-                    ? 'bg-gray-900 text-white'
-                    : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                    ? 'bg-white text-gray-900 dark:bg-gray-900 dark:text-white'
+                    : 'text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white hover:text-gray-600',
                   'rounded-md px-3 py-2 text-sm font-medium',
                 ]"
                 :aria-current="meta.href === item.href ? 'page' : undefined"
@@ -179,8 +180,8 @@ const navigation = [
           :href="item.href"
           :class="[
             meta.href === item.href
-              ? 'bg-gray-900 text-white'
-              : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+              ? 'bg-white text-gray-900 dark:bg-gray-900 dark:text-white'
+              : 'text-gray-700 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white hover:text-gray-600',
             'block rounded-md px-3 py-2 text-base font-medium',
           ]"
           :aria-current="meta.href === item.href ? 'page' : undefined"

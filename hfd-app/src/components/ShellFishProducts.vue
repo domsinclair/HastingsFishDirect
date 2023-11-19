@@ -14,47 +14,47 @@
 // const addToCart = (item, quantity /*, event*/) => {
 // 	emit('addToCart', { item, quantity })
 // }
-//import FreshFish from "~~/db.json";
-const ShellFish = [
-  {
-    Id: 3,
-    Category: "Shell Fish",
-    Name: "Live Razor Clams",
-    Description: "One kilogramme of live Razor Clams",
-    Options: "Sold by weight",
-    Price: "21.50",
-    UnitOfSale: "kg",
-    ImageName: "/liverazorclams.jpg",
-    Visible: "Yes",
-    Href: "#",
-  },
-  {
-    Id: 10,
-    Category: "Shell Fish",
-    Name: "Mussels",
-    Description: "2 kg net of Cornish Mussels (prepared and ready to cook)",
-    Options: "Sold by weight",
-    Price: "6.50",
-    UnitOfSale: "kg",
-    ImageName: "/cornishmussels.jpg",
-    Visible: "Yes",
-    Href: "#",
-  },
-  {
-    Id: 11,
-    Category: "Shell Fish",
-    Name: "Native Live Lobster",
-    Description:
-      "Local live Lobster available in a wide range of sizes from 400 gm",
-    Options: "Sold by weight",
-    Price: "38.00",
-    UnitOfSale: "kg",
-    ImageName: "/localnativelobster.jpg",
-    Visible: "Yes",
-    Href: "#",
-  },
-  // More products...
-];
+import { ShellFish } from "~~/db.json";
+// const ShellFish = [
+//   {
+//     Id: 3,
+//     Category: "Shell Fish",
+//     Name: "Live Razor Clams",
+//     Description: "One kilogramme of live Razor Clams",
+//     Options: "Sold by weight",
+//     Price: "21.50",
+//     UnitOfSale: "kg",
+//     ImageName: "/liverazorclams.jpg",
+//     Visible: "Yes",
+//     Href: "#",
+//   },
+//   {
+//     Id: 10,
+//     Category: "Shell Fish",
+//     Name: "Mussels",
+//     Description: "2 kg net of Cornish Mussels (prepared and ready to cook)",
+//     Options: "Sold by weight",
+//     Price: "6.50",
+//     UnitOfSale: "kg",
+//     ImageName: "/cornishmussels.jpg",
+//     Visible: "Yes",
+//     Href: "#",
+//   },
+//   {
+//     Id: 11,
+//     Category: "Shell Fish",
+//     Name: "Native Live Lobster",
+//     Description:
+//       "Local live Lobster available in a wide range of sizes from 400 gm",
+//     Options: "Sold by weight",
+//     Price: "38.00",
+//     UnitOfSale: "kg",
+//     ImageName: "/localnativelobster.jpg",
+//     Visible: "Yes",
+//     Href: "#",
+//   },
+//   // More products...
+// ];
 </script>
 
 <!--

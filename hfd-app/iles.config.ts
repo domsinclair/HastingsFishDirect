@@ -5,6 +5,7 @@ import Unocss from "unocss/vite";
 import presetIcons from "@unocss/preset-icons";
 
 export default defineConfig({
+  siteUrl: "https://hastingsfishdirect.co.uk",
   modules: [
     [
       "@pinegrow/iles-module",
